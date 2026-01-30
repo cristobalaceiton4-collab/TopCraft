@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO BÁSICO -->
+  <title>TopCraft - TOP Servidores Minecraft No Premium, Packs PvP y Mods 2025</title>
+  <meta name="description" content="Descubre los mejores servidores de Minecraft no premium en español, packs de texturas PvP optimizados y mods para jugar con amigos. Rankings actualizados 2025.">
+  <meta name="keywords" content="servidores minecraft no premium, servidores minecraft gratis, top servidores minecraft, packs pvp minecraft, texture packs pvp, mods minecraft, mods para jugar con amigos, minecraft español, servidores no premiun, minecraft 1.8, minecraft 1.20">
+  <meta name="author" content="TopCraft">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tudominio.com/">
+  
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="imagenes/logo TopCraft .png">
+  <link rel="shortcut icon" type="image/png" href="imagenes/logo TopCraft .png">
+  <link rel="apple-touch-icon" href="imagenes/logo TopCraft .png">
+  
+  <!-- OPEN GRAPH (Redes Sociales) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TopCraft - TOP Servidores Minecraft No Premium y Packs PvP">
+  <meta property="og:description" content="Los mejores servidores de Minecraft no premium, packs de texturas PvP y mods. Rankings actualizados 2025.">
+  <meta property="og:image" content="imagenes/logo TopCraft .png">
+  <meta property="og:url" content="https://tudominio.com/">
+  <meta property="og:site_name" content="TopCraft">
+  
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TopCraft - TOP Servidores Minecraft No Premium">
+  <meta name="twitter:description" content="Los mejores servidores de Minecraft no premium, packs PvP y mods 2025.">
+  <meta name="twitter:image" content="imagenes/logo TopCraft .png">
+  
+  <!-- IDIOMA -->
+  <meta name="language" content="Spanish">
+  <meta http-equiv="content-language" content="es">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  
+  <style>
+    html, body {
+      margin: 0;
+      background-color: #dbb639;
+      padding-top: 80px;
+    }
+    .navbar {
+      background-color: #dbb639;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+    .navbotons {
+      color: #000;
+      text-decoration: none;
+      font-family: "Pixelify Sans", sans-serif;
+      font-size: 30px;
+      padding: 10px 0;
+    }
+    .menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      padding: 15px;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 300px;
+    }
+    .dropdown a {
+      color: #D4AF37;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: "Pixelify Sans", sans-serif;
+      white-space: nowrap;
+    }
+    .menu:hover .dropdown {
+      display: flex;
+    }
+    .logo {
+      width: 400px;
+      max-width: 90%;
+      display: block;
+      margin: 40px auto;
+    }
+    .texto-inicio h1 {
+      font-family: "Pixelify Sans", sans-serif;
+      text-align: center;
+      font-size: 60px;
+      margin: 20px;
+    }
+    .texto-inicio p {
+      font-family: "Pixelify Sans", sans-serif;
+      text-align: center;
+      font-size: 40px;
+      font-weight: lighter;
+      margin: 20px;
+    }
+    .boton-sv {
+      background: linear-gradient(135deg, #fffd89, #ffea2c);
+      text-align: center;
+      display: block;
+      margin-left: 585px;
+      margin-right: 585px;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: #000000;
+      border-radius: 30px;
+      margin-bottom: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .banner-fijo {
+      position: fixed;
+      top: 500px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      background-color: transparent;
+    }
+
+    /* Banner PC */
+    .banner-pc {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      overflow: hidden;
+      display: block;
+    }
+
+    .banner-pc iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Banner Móvil */
+    .banner-mobile {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      overflow: hidden;
+      display: none;
+    }
+
+    .banner-mobile iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* RESPONSIVE MÓVIL */
+    @media (max-width: 900px) {
+      .banner-fijo {
+        display: none;
+      }
+      
+      .navbar {
+        gap: 15px;
+        padding: 10px 5px;
+        flex-wrap: wrap;
+      }
+      
+      .navbotons {
+        font-size: 18px;
+      }
+      
+      .dropdown {
+        min-width: 200px;
+        font-size: 16px;
+      }
+      
+      .dropdown a {
+        font-size: 14px;
+      }
+      
+      .logo {
+        width: 80%;
+        margin: 20px auto;
+      }
+      
+      .texto-inicio h1 {
+        font-size: 36px;
+        margin: 15px 10px;
+      }
+      
+      .texto-inicio p {
+        font-size: 24px;
+        margin: 15px 10px;
+      }
+      
+      .boton-sv {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+        padding: 12px 20px;
+        margin-bottom: 100px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navbotons {
+        font-size: 16px;
+      }
+      
+      .texto-inicio h1 {
+        font-size: 28px;
+      }
+      
+      .texto-inicio p {
+        font-size: 18px;
+      }
+      
+      .boton-sv {
+        font-size: 16px;
+      }
+    }
+
+    /* En móviles: ocultar banner PC y mostrar banner móvil */
+    @media (max-width: 768px) {
+      .banner-pc {
+        display: none !important;
+      }
+      
+      .banner-mobile {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar"> 
+    <a class="navbotons" href="index.html">INICIO</a>
+    <div class="menu">
+      <a class="navbotons" href="#">TOPS</a>
+      <div class="dropdown">
+        <a href="top-servidores.html">TOP SERVIDORES NO PREMIUN</a>
+        <a href="pack-txt-top.html">TOP PACKS PVP</a>
+        <a href="top-mods.html">TOP MODS CON AMIGOS</a>
+      </div>
+    </div>
+    <a class="navbotons" href="#">REDES SOCIALES</a>
+    <a class="navbotons" href="#">CONTACTO</a>
+  </nav>
+  <img class="logo" src="logo TopCraft .png" alt="TopCraft - Los mejores servidores Minecraft no premium">
+  <div class="texto-inicio">
+    <h1>Bienvenido a TopCraft</h1>
+    <p>Podrías empezar por ver el top servidores</p>
+  </div>
+  <a class="boton-sv" href="top-servidores.html">Servidores No Premium</a>
+
+<!-- Banner para PC (728x90) - Solo visible en pantallas grandes -->
+<div class="banner-pc">
+  <div style="position: relative; max-width: 728px; margin: 0 auto;">
+    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width: 100%; display: block;"></iframe>
+    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
+  </div>
+</div>
+
+<!-- Banner para Móviles (468x60) - Solo visible en pantallas pequeñas -->
+<div class="banner-mobile">
+  <div style="position: relative; max-width: 468px; margin: 0 auto;">
+    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width: 100%; display: block;"></iframe>
+    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
+  </div>
+</div>
+
+<!-- STRUCTURED DATA (Schema.org) para mejorar SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TopCraft",
+  "url": "https://tudominio.com/",
+  "description": "Los mejores servidores de Minecraft no premium, packs PvP y mods",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tudominio.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+</body>
+</html>

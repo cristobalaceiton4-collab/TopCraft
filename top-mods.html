@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO BÁSICO -->
+  <title>TOP 6 Mods Minecraft para Jugar con Amigos 2025 | TopCraft</title>
+  <meta name="description" content="Descarga los mejores mods de Minecraft para jugar con amigos: Simple Voice Chat, Create, Lucky Block, Waystones y más. Compatibles con Forge y Fabric.">
+  <meta name="keywords" content="mods minecraft, mods para jugar con amigos, simple voice chat, create mod, lucky block, waystones, mods forge, mods fabric, minecraft 1.20, mods survival">
+  <meta name="author" content="TopCraft">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tudominio.com/top-mods.html">
+  
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="imagenes/logo TopCraft .png">
+  <link rel="shortcut icon" type="image/png" href="imagenes/logo TopCraft .png">
+  <link rel="apple-touch-icon" href="imagenes/logo TopCraft .png">
+  
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="TOP 6 Mods Minecraft para Jugar con Amigos">
+  <meta property="og:description" content="Los mejores mods para jugar Minecraft con amigos: voice chat, automatización, aventuras y más.">
+  <meta property="og:image" content="imagenes/logo TopCraft .png">
+  <meta property="og:url" content="https://tudominio.com/top-mods.html">
+  
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TOP 6 Mods Minecraft con Amigos">
+  <meta name="twitter:description" content="Simple Voice Chat, Create, Lucky Block y más mods para Minecraft.">
+  <meta name="twitter:image" content="imagenes/logo TopCraft .png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <style>
+    html, body {
+      margin: 0;
+      background-color: #dbb639;
+      padding-top: 90px;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: #dbb639;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .navbotons {
+      color: #000;
+      text-decoration: none;
+      font-family: "Pixelify Sans", sans-serif;
+      font-size: 30px;
+    }
+
+    .menu {
+      position: relative;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: black;
+      padding: 15px;
+      flex-direction: column;
+      gap: 12px;
+      min-width: 300px;
+    }
+
+    .dropdown a {
+      color: #D4AF37;
+      font-size: 20px;
+      text-decoration: none;
+      font-family: "Pixelify Sans", sans-serif;
+    }
+
+    .menu:hover .dropdown {
+      display: flex;
+    }
+
+    /* TITULO */
+    .inicio {
+      font-family: "Pixelify Sans", sans-serif;
+      text-align: center;
+      font-size: 45px;
+      margin-bottom: 40px;
+    }
+
+    /* TARJETAS */
+    .server-card {
+      max-width: 950px;
+      margin: 80px auto;
+      background-color: #f2e3a3;
+      border-radius: 18px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+      text-align: center;
+    }
+
+    /* IMÁGENES ESTILO MINIATURA YOUTUBE */
+    .server-card img {
+      width: 560px;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 14px;
+      margin-bottom: 25px;
+    }
+
+    .server-card h1 {
+      font-family: "Pixelify Sans", sans-serif;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .server-desc {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    .server-data {
+      background-color: rgba(0, 0, 0, 0.12);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    /* BOTONES */
+    .download-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .download-buttons a {
+      background-color: #000;
+      color: #D4AF37;
+      font-family: "Pixelify Sans", sans-serif;
+      font-size: 18px;
+      padding: 12px 22px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: 0.25s;
+    }
+
+    .download-buttons a:hover {
+      background-color: #D4AF37;
+      color: #000;
+    }
+
+    .banner-fijo {
+      position: fixed;
+      top: 500px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Banner PC */
+    .banner-pc {
+      width: 100%;
+      padding: 20px 0;
+      text-align: center;
+      overflow: hidden;
+      display: block;
+    }
+
+    .banner-pc iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Banner Móvil */
+    .banner-mobile {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      overflow: hidden;
+      display: none;
+    }
+
+    .banner-mobile iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* RESPONSIVE MÓVIL */
+    @media (max-width: 900px) {
+      .banner-fijo {
+        display: none;
+      }
+      
+      body {
+        padding-top: 70px;
+      }
+      
+      .navbar {
+        gap: 15px;
+        padding: 10px 5px;
+        flex-wrap: wrap;
+      }
+      
+      .navbotons {
+        font-size: 18px;
+      }
+      
+      .dropdown {
+        min-width: 200px;
+      }
+      
+      .dropdown a {
+        font-size: 14px;
+      }
+      
+      .inicio {
+        font-size: 32px;
+        margin: 20px 10px;
+        padding: 0 10px;
+      }
+      
+      .server-card {
+        margin: 40px 15px;
+        padding: 25px 15px;
+      }
+      
+      .server-card img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .server-card h1 {
+        font-size: 26px;
+      }
+      
+      .server-desc {
+        font-size: 16px;
+      }
+      
+      .server-data {
+        font-size: 15px;
+        padding: 15px;
+      }
+      
+      .download-buttons {
+        gap: 10px;
+      }
+      
+      .download-buttons a {
+        font-size: 14px;
+        padding: 10px 16px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .navbotons {
+        font-size: 14px;
+      }
+      
+      .inicio {
+        font-size: 24px;
+      }
+      
+      .server-card h1 {
+        font-size: 22px;
+      }
+      
+      .server-desc {
+        font-size: 14px;
+      }
+      
+      .download-buttons a {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+
+    /* En móviles: ocultar banner PC y mostrar banner móvil */
+    @media (max-width: 768px) {
+      .banner-pc {
+        display: none !important;
+      }
+      
+      .banner-mobile {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar"> 
+    <a class="navbotons" href="index.html">INICIO</a>
+
+    <div class="menu">
+      <a class="navbotons" href="#">TOPS</a>
+      <div class="dropdown">
+        <a href="top-servidores.html">TOP SERVIDORES NO PREMIUN</a>
+        <a href="pack-txt-top.html">TOP PACKS PVP</a>
+        <a href="top-mods.html">TOP MODS CON AMIGOS</a>
+      </div>
+    </div>
+
+    <a class="navbotons" href="#">REDES SOCIALES</a>
+    <a class="navbotons" href="#">CONTACTO</a>
+  </nav>
+
+<div class="inicio">
+  <h1>TOP MODS PARA JUGAR CON AMIGOS</h1>
+</div>
+
+<!-- MOD 1 -->
+<div class="server-card">
+  <img src="foto 1.webp" alt="Simple Voice Chat mod Minecraft">
+  <h1>🥇 Simple Voice Chat</h1>
+
+  <div class="server-desc">
+    Chat de voz por proximidad. Imprescindible para survival,
+    roleplay y trolleos con amigos. Funciona en servidores y permite comunicación 3D realista.
+  </div>
+
+  <ul class="server-data">
+    <li>🔹 Categoría: Social / Multiplayer</li>
+    <li>🔹 Compatible: Forge & Fabric</li>
+  </ul>
+
+  <div class="download-buttons">
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/y0UwvvY4/voicechat-forge-1.21.11-2.6.11.jar">Forge 1.21.11</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/Ky8OPQ3o/voicechat-forge-1.21.10-2.6.11.jar">Forge 1.21.10</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/SCd0gsGp/voicechat-forge-1.21.8-2.6.11.jar">Forge 1.21.8</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/RVkz20SL/voicechat-forge-1.21.5-2.6.11.jar">Forge 1.21.5</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/WzraZvkT/voicechat-forge-1.21.4-2.6.11.jar">Forge 1.21.4</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/TyrO2Tcb/voicechat-forge-1.21.1-2.6.11.jar">Forge 1.21.1</a>
+    <a href="https://cdn.modrinth.com/data/9eGKb6K1/versions/eeY1kjuJ/voicechat-forge-1.20.1-2.6.11.jar">Forge 1.20.1</a>
+  </div>
+</div>
+
+<!-- MOD 2 -->
+<div class="server-card">
+  <img src="foto nashei.webp" alt="Create mod Minecraft automatización">
+  <h1>🥈 Create</h1>
+
+  <div class="server-desc">
+    Automatización visual con engranajes, máquinas y trenes.
+    Ideal para jugar en equipo y construir fábricas increíbles. Uno de los mods técnicos más populares.
+  </div>
+
+  <ul class="server-data">
+    <li>🔹 Categoría: Técnico</li>
+    <li>🔹 Compatible: Forge</li>
+  </ul>
+
+  <div class="download-buttons">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/create/download/7178761">Forge 1.20.1</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/create/download/5797604">Forge 1.19.2</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/create/download/4550986">Forge 1.18.2</a>
+  </div>
+</div>
+
+<!-- MOD 3 -->
+<div class="server-card">
+  <img src="lukyblock-imagenes.png" alt="Lucky Block mod Minecraft">
+  <h1>🥉 Lucky Block</h1>
+
+  <div class="server-desc">
+    Bloques aleatorios con recompensas o desgracias.
+    Ideal para eventos y caos con amigos. Cada bloque es una sorpresa diferente.
+  </div>
+
+  <div class="download-buttons">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/lucky-block/download/4842581">Forge 1.20.2</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/lucky-block/download/4817272">Forge 1.19.3</a>
+  </div>
+</div>
+
+<!-- MOD 4 -->
+<div class="server-card">
+  <img src="waystones.jpg" alt="Waystones mod teletransporte">
+  <h1>4️⃣ Waystones</h1>
+
+  <div class="server-desc">
+    Teletransporte rápido entre bases sin romper el survival. Perfecto para mundos grandes con amigos.
+  </div>
+
+  <div class="download-buttons">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/waystones/download/7454286">Forge 1.20.1</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/waystones/download/4943265">Forge 1.19.2</a>
+  </div>
+</div>
+
+<!-- MOD 5 -->
+<div class="server-card">
+  <img src="dragones.png" alt="Ice and Fire Dragons mod">
+  <h1>5️⃣ Ice and Fire: Dragons</h1>
+
+  <div class="server-desc">
+    Dragones, criaturas míticas y armaduras épicas. Añade aventuras épicas a tu mundo de Minecraft.
+  </div>
+
+  <div class="download-buttons">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons/download/5633453">Forge 1.20.1</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons/download/5037952">Forge 1.19.2</a>
+  </div>
+</div>
+
+<!-- MOD 6 -->
+<div class="server-card">
+  <img src="vetter.jpg" alt="Better Combat mod">
+  <h1>6️⃣ Better Combat</h1>
+
+  <div class="server-desc">
+    Combate más fluido con animaciones y combos. Mejora completamente el sistema de peleas de Minecraft.
+  </div>
+
+  <div class="download-buttons">
+    <a href="https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus/download/7287334">Forge 1.20.1</a>
+    <a href="https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus/download/4534645">Forge 1.19.4</a>
+  </div>
+</div>
+
+<!-- Banner para PC (728x90) - Solo visible en pantallas grandes -->
+<div class="banner-pc">
+  <div style="position: relative; max-width: 728px; margin: 0 auto;">
+    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width: 100%; display: block;"></iframe>
+    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
+  </div>
+</div>
+
+<!-- Banner para Móviles (468x60) - Solo visible en pantallas pequeñas -->
+<div class="banner-mobile">
+  <div style="position: relative; max-width: 468px; margin: 0 auto;">
+    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width: 100%; display: block;"></iframe>
+    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
+  </div>
+</div>
+
+</body>
+</html>
