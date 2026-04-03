@@ -3,64 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO BÁSICO -->
+
+  <!-- SEO -->
   <title>TOP 6 Servidores Minecraft No Premium 2025 | TopCraft</title>
   <meta name="description" content="Los mejores servidores de Minecraft no premium en español: UniversoCraft, Librecraft, Purple Prison y más. IPs actualizadas, rankings y reviews 2025.">
-  <meta name="keywords" content="servidores minecraft no premium, servidores minecraft gratis, universocraft, librecraft, purple prison, servidores no premiun, minecraft español, servidores hispanos, ips minecraft">
+  <meta name="keywords" content="servidores minecraft no premium, servidores minecraft gratis, universocraft, librecraft, purple prison, minebox, zonecraft, minemora, servidores no premium, minecraft español, ips minecraft 2025">
   <meta name="author" content="TopCraft">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://tudominio.com/top-servidores.html">
-  
+
   <!-- FAVICON -->
   <link rel="icon" type="image/png" href="imagenes/logo TopCraft .png">
-  <link rel="shortcut icon" type="image/png" href="imagenes/logo TopCraft .png">
   <link rel="apple-touch-icon" href="imagenes/logo TopCraft .png">
-  
+
   <!-- OPEN GRAPH -->
   <meta property="og:type" content="article">
   <meta property="og:title" content="TOP 6 Servidores Minecraft No Premium 2025">
-  <meta property="og:description" content="Los mejores servidores de Minecraft no premium: UniversoCraft, Librecraft, Purple Prison y más.">
+  <meta property="og:description" content="Los mejores servidores de Minecraft no premium: UniversoCraft, Librecraft, Purple Prison y más. IPs actualizadas.">
   <meta property="og:image" content="imagenes/logo TopCraft .png">
   <meta property="og:url" content="https://tudominio.com/top-servidores.html">
-  
+  <meta property="og:locale" content="es_ES">
+
   <!-- TWITTER CARD -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TOP 6 Servidores Minecraft No Premium">
-  <meta name="twitter:description" content="Los mejores servidores no premium con IPs actualizadas.">
+  <meta name="twitter:title" content="TOP 6 Servidores Minecraft No Premium 2025">
+  <meta name="twitter:description" content="Los mejores servidores no premium con IPs actualizadas 2025.">
   <meta name="twitter:image" content="imagenes/logo TopCraft .png">
 
-  <!-- FUENTE -->
+  <meta name="theme-color" content="#dbb639">
+
+  <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    html, body {
-      margin: 0;
-      background-color: #dbb639;
-      padding-top: 90px;
+    :root {
+      --gold: #dbb639;
+      --gold-light: #f5d050;
+      --gold-dark: #b8921e;
+      --black: #0a0a0a;
+      --card-bg: #f5e9b8;
+      --card-inner: rgba(0,0,0,0.08);
+      --text-dark: #1a1208;
+      --pixel-font: "Pixelify Sans", sans-serif;
+      --shadow-card: 0 8px 32px rgba(0,0,0,0.3);
+      --radius: 16px;
     }
 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--gold);
+      background-image:
+        radial-gradient(circle at 15% 40%, rgba(255,255,255,0.07) 0%, transparent 50%),
+        radial-gradient(circle at 85% 60%, rgba(0,0,0,0.07) 0%, transparent 40%);
+      min-height: 100vh;
+      padding-top: 80px;
+      font-family: var(--pixel-font);
+    }
+
+    /* ============================
+       NAVBAR
+    ============================ */
     .navbar {
-      background-color: #dbb639;
+      background: var(--gold);
+      border-bottom: 4px solid var(--black);
+      box-shadow: 0 4px 0 var(--gold-dark);
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 8px;
       position: fixed;
-      top: 0;
+      top: 0; left: 0;
       width: 100%;
-      padding: 15px 0;
+      padding: 12px 20px;
       z-index: 1000;
     }
 
     .navbotons {
-      color: #000;
+      color: var(--black);
       text-decoration: none;
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 30px;
-      padding: 10px 0;
+      font-family: var(--pixel-font);
+      font-size: 22px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s, transform 0.1s;
+    }
+
+    .navbotons:hover {
+      background: var(--black);
+      color: var(--gold-light);
+      transform: translateY(-2px);
     }
 
     .menu {
@@ -69,488 +105,507 @@
       align-items: center;
     }
 
+    .menu > .navbotons::after { content: " ▾"; font-size: 14px; }
+
     .dropdown {
       display: none;
       position: absolute;
-      top: 100%;
+      top: calc(100% + 8px);
       left: 50%;
       transform: translateX(-50%);
-      background-color: black;
-      padding: 15px;
+      background: var(--black);
+      border: 3px solid var(--gold-dark);
+      border-radius: 12px;
+      padding: 12px;
       flex-direction: column;
-      gap: 12px;
-      min-width: 300px;
+      gap: 6px;
+      min-width: 280px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      z-index: 100;
     }
 
     .dropdown a {
-      color: #D4AF37;
-      font-size: 20px;
+      color: var(--gold-light);
+      font-size: 16px;
       text-decoration: none;
-      font-family: "Pixelify Sans", sans-serif;
+      font-family: var(--pixel-font);
+      white-space: nowrap;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .dropdown a:hover {
+      background: var(--gold-dark);
+      color: var(--black);
+    }
+
+    .menu:hover .dropdown { display: flex; }
+
+    /* ============================
+       TÍTULO DE PÁGINA
+    ============================ */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    .page-header h1 {
+      font-size: clamp(26px, 5vw, 48px);
+      color: var(--black);
+      text-shadow: 3px 3px 0 var(--gold-dark), 5px 5px 0 rgba(0,0,0,0.15);
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: var(--text-dark);
+      opacity: 0.75;
+    }
+
+    /* ============================
+       TARJETA DE SERVIDOR
+    ============================ */
+    .server-card {
+      max-width: 900px;
+      margin: 48px auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      border: 3px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+    }
+
+    .server-card:hover {
+      border-color: var(--gold-dark);
+      transform: translateY(-4px);
+    }
+
+    /* Medalla de posición */
+    .rank-badge {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--black);
+      color: var(--gold-light);
+      font-family: var(--pixel-font);
+      font-size: 22px;
+      font-weight: 700;
+      padding: 6px 20px;
+      border-radius: 30px;
+      border: 3px solid var(--gold-dark);
       white-space: nowrap;
     }
 
-    .menu:hover .dropdown {
-      display: flex;
-    }
-
-    /* LOGO */
-    .logo {
-      width: 380px;
-      display: block;
-      margin: 40px auto;
-    }
-
-    /* TITULO */
-    .inicio {
-      font-family: "Pixelify Sans", sans-serif;
-      text-align: center;
-      font-size: 45px;
-      margin-bottom: 40px;
-    }
-
-    /* TARJETA DE SERVIDOR */
-    .server-card {
-      max-width: 950px;
-      margin: 80px auto;
-      background-color: #f2e3a3;
-      border-radius: 18px;
-      padding: 40px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      text-align: center;
-    }
-
     .server-card img {
-      width: 260px;
+      width: 220px;
+      max-width: 70%;
       display: block;
-      margin: 0 auto 20px;
+      margin: 16px auto 20px;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));
     }
 
-    .server-card h1 {
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 34px;
-      margin-bottom: 20px;
+    .server-card h2 {
+      font-family: var(--pixel-font);
+      font-size: clamp(22px, 3vw, 32px);
+      margin-bottom: 18px;
+      color: var(--text-dark);
     }
 
     .server-desc {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 24px;
+      color: #2a1f05;
+      text-align: left;
     }
 
+    /* Datos del servidor */
     .server-data {
-      background-color: rgba(0, 0, 0, 0.12);
-      padding: 20px;
+      background: var(--card-inner);
+      padding: 20px 24px;
       border-radius: 12px;
       text-align: left;
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 17px;
+      font-size: 15px;
       list-style: none;
+      margin-bottom: 24px;
     }
 
     .server-data li {
       margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    /* IP del servidor */
+    .server-ip-block {
+      margin-top: 8px;
+    }
+
+    .server-ip-label {
+      font-size: 13px;
+      color: var(--text-dark);
+      opacity: 0.6;
+      font-family: Arial, sans-serif;
+      margin-bottom: 6px;
     }
 
     .server-ip {
-      margin-top: 25px;
-      display: inline-block;
-      background-color: #000;
-      color: #D4AF37;
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 22px;
-      padding: 12px 26px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--black);
+      color: var(--gold-light);
+      font-family: var(--pixel-font);
+      font-size: clamp(16px, 2.5vw, 22px);
+      padding: 12px 24px;
       border-radius: 12px;
+      border: 2px solid var(--gold-dark);
       letter-spacing: 1px;
-      margin-bottom: 100px;
+      word-break: break-all;
     }
 
-    .banner-fijo {
-      position: fixed;
-      top: 500px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 999;
-      background-color: transparent;
+    .copy-btn {
+      background: var(--gold-dark);
+      color: var(--black);
+      border: none;
+      font-family: var(--pixel-font);
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      flex-shrink: 0;
     }
 
-    /* Banner PC */
-    .banner-pc {
+    .copy-btn:hover { background: var(--gold-light); transform: scale(1.05); }
+    .copy-btn.copied { background: #3cb371; color: #fff; }
+
+    /* Estado del servidor */
+    .status-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    .status-active { background: #3cb371; box-shadow: 0 0 6px #3cb371; }
+    .status-medium { background: #f5a623; box-shadow: 0 0 6px #f5a623; }
+    .status-low    { background: #e74c3c; box-shadow: 0 0 6px #e74c3c; }
+
+    /* ============================
+       BANNERS
+    ============================ */
+    .banner-wrap {
       width: 100%;
-      padding: 20px 0;
+      padding: 20px 0 50px;
       text-align: center;
       overflow: hidden;
-      display: block;
     }
 
-    .banner-pc iframe {
-      max-width: 100%;
-      height: auto;
+    .banner-pc { display: block; }
+    .banner-mobile { display: none; }
+
+    @media (max-width: 768px) {
+      .banner-pc { display: none !important; }
+      .banner-mobile { display: block !important; }
     }
 
-    /* Banner Móvil */
-    .banner-mobile {
-      width: 100%;
-      padding: 15px 0;
+    /* ============================
+       FOOTER
+    ============================ */
+    footer {
+      background: var(--black);
+      color: var(--gold-light);
       text-align: center;
-      overflow: hidden;
-      display: none;
+      padding: 24px 20px;
+      font-size: 14px;
+      font-family: var(--pixel-font);
+      border-top: 4px solid var(--gold-dark);
     }
 
-    .banner-mobile iframe {
-      max-width: 100%;
-      height: auto;
-    }
+    footer a { color: var(--gold-light); text-decoration: none; }
 
-    /* RESPONSIVE MÓVIL */
-    @media (max-width: 900px) {
-      .banner-fijo {
-        display: none;
-      }
-      
-      body {
-        padding-top: 70px;
-      }
-      
+    /* ============================
+       RESPONSIVE
+    ============================ */
+    @media (max-width: 768px) {
+      body { padding-top: 70px; }
+
       .navbar {
-        gap: 15px;
-        padding: 10px 5px;
+        gap: 4px;
+        padding: 10px 8px;
         flex-wrap: wrap;
       }
-      
-      .navbotons {
-        font-size: 18px;
-      }
-      
-      .dropdown {
-        min-width: 200px;
-      }
-      
-      .dropdown a {
-        font-size: 14px;
-      }
-      
-      .inicio {
-        font-size: 32px;
-        margin: 20px 10px;
-      }
-      
+
+      .navbotons { font-size: 15px; padding: 6px 10px; }
+      .dropdown { min-width: 220px; }
+      .dropdown a { font-size: 14px; }
+
       .server-card {
-        margin: 40px 15px;
-        padding: 25px 15px;
+        margin: 48px 14px;
+        padding: 30px 18px;
       }
-      
-      .server-card img {
-        width: 200px;
-        max-width: 80%;
-      }
-      
-      .server-card h1 {
-        font-size: 26px;
-      }
-      
-      .server-desc {
-        font-size: 16px;
-      }
-      
-      .server-data {
-        font-size: 15px;
-        padding: 15px;
-      }
-      
-      .server-ip {
-        font-size: 18px;
-        padding: 10px 20px;
-        margin-bottom: 50px;
-        word-break: break-all;
-      }
+
+      .server-data { font-size: 14px; padding: 16px; }
     }
 
-    @media (max-width: 500px) {
-      .navbotons {
-        font-size: 14px;
-      }
-      
-      .inicio {
-        font-size: 24px;
-      }
-      
-      .server-card h1 {
-        font-size: 22px;
-      }
-      
-      .server-desc {
-        font-size: 14px;
-      }
-      
-      .server-ip {
-        font-size: 16px;
-        padding: 8px 16px;
-      }
-    }
-
-    /* En móviles: ocultar banner PC y mostrar banner móvil */
-    @media (max-width: 768px) {
-      .banner-pc {
-        display: none !important;
-      }
-      
-      .banner-mobile {
-        display: block !important;
-      }
+    @media (max-width: 400px) {
+      .navbotons { font-size: 13px; padding: 5px 8px; }
+      .server-card { margin: 48px 10px; padding: 24px 14px; }
     }
   </style>
 </head>
-
 <body>
 
-  <nav class="navbar"> 
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <a class="navbotons" href="index.html">INICIO</a>
-
     <div class="menu">
-      <a class="navbotons" href="#">TOPS</a>
-      <div class="dropdown">
-        <a href="top-servidores.html">TOP SERVIDORES NO PREMIUN</a>
-        <a href="pack-txt-top.html">TOP PACKS PVP</a>
-        <a href="top-mods.html">TOP MODS CON AMIGOS</a>
+      <a class="navbotons" href="#" aria-haspopup="true">TOPS</a>
+      <div class="dropdown" role="menu">
+        <a href="top-servidores.html" role="menuitem">🖥️ TOP SERVIDORES NO PREMIUM</a>
+        <a href="pack-txt-top.html" role="menuitem">🎨 TOP PACKS PVP</a>
+        <a href="top-mods.html" role="menuitem">🧩 TOP MODS CON AMIGOS</a>
       </div>
     </div>
-
     <a class="navbotons" href="#">REDES SOCIALES</a>
     <a class="navbotons" href="#">CONTACTO</a>
   </nav>
 
-  <div class="inicio">
-    <h1>TOP SERVIDORES NO PREMIUM</h1>
-  </div>
+  <main>
+    <!-- ENCABEZADO -->
+    <header class="page-header">
+      <h1>🖥️ TOP SERVIDORES NO PREMIUM</h1>
+      <p>Rankings actualizados 2025 · Servidores en español con IPs verificadas</p>
+    </header>
 
-  <div class="server-card">
+    <!-- SERVIDOR 1: UniversoCraft -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">🥇 #1 MEJOR SERVIDOR</div>
+      <img src="logo univ craft.png" alt="UniversoCraft - Mejor servidor Minecraft no premium" loading="lazy" width="220">
+      <h2 itemprop="name">UniversoCraft</h2>
+      <div class="server-desc" itemprop="description">
+        UniversoCraft es uno de los servidores no premium más grandes y consolidados de habla hispana, reconocido por su enorme base de jugadores diarios y su funcionamiento como una gran network con múltiples modalidades.
+        <br><br>
+        Destaca por su infraestructura estable, eventos constantes y una comunidad muy activa dentro y fuera del juego. Ideal si buscas variedad de modos de juego y siempre encontrar gente conectada.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> Network / Multimodal</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +8 años</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-active"></span>Muy activo</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 2.500 – 4.000 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.20+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>mc.universocraft.com</span>
+          <button class="copy-btn" onclick="copyIP(this, 'mc.universocraft.com')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
 
-    <img src="logo univ craft.png" alt="UniversoCraft - Mejor servidor Minecraft no premium">
+    <!-- SERVIDOR 2: Librecraft -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">🥈 #2 SERVIDOR</div>
+      <img src="logo librecraft.png" alt="Librecraft servidor Minecraft no premium" loading="lazy" width="220">
+      <h2 itemprop="name">Librecraft</h2>
+      <div class="server-desc" itemprop="description">
+        Librecraft es un servidor no premium que combina una experiencia clásica con sistemas modernos, manteniendo una comunidad fiel y estable a lo largo de los años.
+        <br><br>
+        Es conocido por su jugabilidad equilibrada, buen ambiente y una moderación activa que cuida la experiencia del jugador desde el primer minuto.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> Semi-network</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +5 años</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-active"></span>Activo</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 800 – 1.500 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.20+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>mc.librecraft.com</span>
+          <button class="copy-btn" onclick="copyIP(this, 'mc.librecraft.com')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
 
-    <h1>🥇 UniversoCraft</h1>
+    <!-- SERVIDOR 3: Purple Prison -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">🥉 #3 SERVIDOR</div>
+      <img src="logo purpleprission.png" alt="Purple Prison servidor Minecraft Prison" loading="lazy" width="220">
+      <h2 itemprop="name">Purple Prison</h2>
+      <div class="server-desc" itemprop="description">
+        Purple Prison es uno de los servidores no premium de tipo Prison más conocidos a nivel internacional. Su jugabilidad se centra en la progresión, el PvP competitivo y los eventos constantes, lo que mantiene a los jugadores activos durante largos periodos.
+        <br><br>
+        Cuenta con una economía bien trabajada, rangos progresivos y una comunidad competitiva muy activa.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> Prison especializado</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +7 años</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-active"></span>Muy activo</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 700 – 1.200 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.20+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>purpleprison.org</span>
+          <button class="copy-btn" onclick="copyIP(this, 'purpleprison.org')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
 
-    <div class="server-desc">
-      UniversoCraft es uno de los servidores no premium más grandes y consolidados
-      de habla hispana, reconocido por su enorme base de jugadores diarios y su
-      funcionamiento como una gran network con múltiples modalidades.
-      <br><br>
-      Destaca por su infraestructura estable, eventos constantes y una comunidad
-      muy activa dentro y fuera del juego.
+    <!-- SERVIDOR 4: Minebox -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">4️⃣ #4 SERVIDOR</div>
+      <img src="logo minebox.png" alt="Minebox servidor Minecraft multimodal" loading="lazy" width="220">
+      <h2 itemprop="name">Minebox</h2>
+      <div class="server-desc" itemprop="description">
+        Minebox es un servidor no premium multimodal enfocado en ofrecer modos populares con buen rendimiento y accesibilidad para todo tipo de jugadores.
+        <br><br>
+        Está pensado tanto para jugadores casuales como competitivos, con partidas dinámicas y una experiencia fluida.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> Multimodal</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +4 años</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-active"></span>Activo</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 400 – 800 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.20+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>play.minebox.co</span>
+          <button class="copy-btn" onclick="copyIP(this, 'play.minebox.co')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SERVIDOR 5: Zonecraft -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">5️⃣ #5 SERVIDOR</div>
+      <img src="logo zonecraft.png" alt="Zonecraft servidor PvP Minecraft" loading="lazy" width="220">
+      <h2 itemprop="name">Zonecraft</h2>
+      <div class="server-desc" itemprop="description">
+        Zonecraft es un servidor no premium enfocado en PvP y minijuegos clásicos. Aunque su tamaño es menor que el de las grandes networks, mantiene una comunidad constante y partidas rápidas ideales para jugadores competitivos.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> PvP / Minijuegos</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +3 años</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-medium"></span>Medio</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 200 – 500 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.20+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>play.zonecraft.es</span>
+          <button class="copy-btn" onclick="copyIP(this, 'play.zonecraft.es')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SERVIDOR 6: Minemora -->
+    <article class="server-card" itemscope itemtype="https://schema.org/VideoGame">
+      <div class="rank-badge">6️⃣ #6 SERVIDOR</div>
+      <img src="logo minemora.png" alt="Minemora servidor Minecraft clásico hispano" loading="lazy" width="220">
+      <h2 itemprop="name">Minemora</h2>
+      <div class="server-desc" itemprop="description">
+        Minemora es un servidor no premium histórico dentro de la comunidad hispana. Fue muy popular en el pasado y es recordado por muchos jugadores veteranos. Actualmente su actividad es más baja y variable, pero sigue siendo un clásico.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Tipo:</strong> Clásico</span></li>
+        <li>🔹 <span><strong>Antigüedad:</strong> +8 años (con periodos inactivos)</span></li>
+        <li>🔹 <span><strong>Estado:</strong> <span class="status-dot status-low"></span>Bajo / Variable</span></li>
+        <li>🔹 <span><strong>Jugadores:</strong> 50 – 150 diarios (est.)</span></li>
+        <li>🔹 <span><strong>Versiones:</strong> 1.8 – 1.16+</span></li>
+      </ul>
+      <div class="server-ip-block">
+        <p class="server-ip-label">IP del servidor</p>
+        <div class="server-ip">
+          <span>mc.minemora.net</span>
+          <button class="copy-btn" onclick="copyIP(this, 'mc.minemora.net')" aria-label="Copiar IP">📋 Copiar</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- BANNERS -->
+    <div class="banner-wrap">
+      <div class="banner-pc">
+        <div style="position:relative;max-width:728px;margin:0 auto;">
+          <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width:100%;display:block;" title="Publicidad" loading="lazy"></iframe>
+          <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" rel="noopener noreferrer" style="position:absolute;top:0;bottom:0;left:0;right:0;" aria-label="Anuncio"></a>
+        </div>
+      </div>
+      <div class="banner-mobile">
+        <div style="position:relative;max-width:468px;margin:0 auto;">
+          <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width:100%;display:block;" title="Publicidad" loading="lazy"></iframe>
+          <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" rel="noopener noreferrer" style="position:absolute;top:0;bottom:0;left:0;right:0;" aria-label="Anuncio"></a>
+        </div>
+      </div>
     </div>
+  </main>
 
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> Network / Multimodal</li>
-      <li>🔹 <strong>Antigüedad:</strong> +8 años aprox.</li>
-      <li>🔹 <strong>Estado:</strong> Muy activo</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 2.500 – 4.000 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.20+</li>
-      <li>🔹 <strong>Owner:</strong> No público</li>
-    </ul>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 TopCraft · Todos los derechos reservados · <a href="#">Contacto</a></p>
+  </footer>
 
-    <div class="server-ip">
-      IP: mc.universocraft.com
-    </div>
+  <!-- SCHEMA.ORG SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "TOP 6 Servidores Minecraft No Premium 2025",
+    "description": "Los mejores servidores de Minecraft no premium en español con IPs actualizadas",
+    "inLanguage": "es",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"VideoGame","name":"UniversoCraft","url":"https://universocraft.com"}},
+      {"@type":"ListItem","position":2,"item":{"@type":"VideoGame","name":"Librecraft","url":"https://librecraft.com"}},
+      {"@type":"ListItem","position":3,"item":{"@type":"VideoGame","name":"Purple Prison","url":"https://purpleprison.org"}},
+      {"@type":"ListItem","position":4,"item":{"@type":"VideoGame","name":"Minebox","url":"https://minebox.co"}},
+      {"@type":"ListItem","position":5,"item":{"@type":"VideoGame","name":"Zonecraft","url":"https://zonecraft.es"}},
+      {"@type":"ListItem","position":6,"item":{"@type":"VideoGame","name":"Minemora","url":"https://minemora.net"}}
+    ]
+  }
+  </script>
 
-  </div>
-
-  <div class="server-card">
-
-    <img src="logo librecraft.png" alt="Librecraft servidor Minecraft">
-
-    <h1>🥈 Librecraft</h1>
-
-    <div class="server-desc">
-      Librecraft es un servidor no premium que combina una experiencia clásica
-       con sistemas modernos, manteniendo una comunidad fiel y estable.
-      <br><br>
-      Es conocido por su jugabilidad equilibrada, buen ambiente
-       y una moderación activa que cuida la experiencia del jugador.
-    </div>
-
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> Semi-network</li>
-      <li>🔹 <strong>Antigüedad:</strong> +5 años aprox.</li>
-      <li>🔹 <strong>Estado:</strong> activo</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 800 – 1.500 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.20+</li>
-      <li>🔹 <strong>Owner:</strong> No público</li>
-    </ul>
-
-    <div class="server-ip">
-      IP: mc.librecraft.com
-    </div>
-
-  </div>
-
-  <div class="server-card">
-
-    <img src="logo purpleprission.png" alt="Purple Prison Minecraft server">
-
-    <h1>🥉 Purple Prison</h1>
-
-    <div class="server-desc">
-      Purple Prison es uno de los servidores no premium de tipo Prison más conocidos a nivel
-       internacional. Su jugabilidad se centra en la progresión, el PvP competitivo y los eventos constantes, lo
-       que mantiene a los jugadores activos durante largos periodos.
-      <br><br>
-      Cuenta con una economía bien trabajada, rangos progresivos y una comunidad competitiva muy activa.
-    </div>
-
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> Prison especializado</li>
-      <li>🔹 <strong>Antigüedad:</strong> +7 años aprox.</li>
-      <li>🔹 <strong>Estado:</strong> Muy activo</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 700 – 1.200 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.20+</li>
-      <li>🔹 <strong>Owner:</strong> Equipo administrativo internacional (no público)</li>
-    </ul>
-
-    <div class="server-ip">
-      IP: purpleprison.org
-    </div>
-
-  </div>
-
-  <div class="server-card">
-
-    <img src="logo minebox.png" alt="Minebox servidor Minecraft">
-
-    <h1>4️⃣ Minebox</h1>
-
-    <div class="server-desc">
-     Minebox es un servidor no premium multimodal
-      enfocado en ofrecer modos populares con buen rendimiento y accesibilidad.
-      <br><br>
-      Está pensado tanto para jugadores casuales como competitivos, con
-       partidas dinámicas y una experiencia fluida.
-    </div>
-
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> Multimodal</li>
-      <li>🔹 <strong>Antigüedad:</strong> +4 años aprox.</li>
-      <li>🔹 <strong>Estado:</strong> Activo</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 400 – 800 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.20+</li>
-      <li>🔹 <strong>Owner:</strong> No público</li>
-    </ul>
-
-    <div class="server-ip">
-      IP: play.minebox.co
-    </div>
-
-  </div>
-
-  <div class="server-card">
-
-    <img src="logo zonecraft.png" alt="Zonecraft servidor PvP">
-
-    <h1>5️⃣ Zonecraft</h1>
-
-    <div class="server-desc">
-     Zonecraft es un servidor no premium enfocado en PvP y minijuegos clásicos.
-      <br><br>
-      Aunque su tamaño es menor que el de las grandes networks, mantiene una
-       comunidad constante y partidas rápidas ideales para jugadores competitivos.
-    </div>
-
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> PvP / Minijuegos</li>
-      <li>🔹 <strong>Antigüedad:</strong> +3 años aprox.</li>
-      <li>🔹 <strong>Estado:</strong> Medio</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 200 – 500 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.20+</li>
-      <li>🔹 <strong>Owner:</strong> No público</li>
-    </ul>
-
-    <div class="server-ip">
-      IP: play.zonecraft.es
-    </div>
-
-  </div>
-
-  <div class="server-card">
-
-    <img src="logo minemora.png" alt="Minemora servidor clásico">
-
-    <h1>6️⃣ Minemora</h1>
-
-    <div class="server-desc">
-     Minemora es un servidor no premium histórico dentro de la comunidad hispana.
-      <br><br>
-      Fue muy popular en el pasado y es recordado por
-       muchos jugadores veteranos. Actualmente su actividad es más baja y variable.
-    </div>
-
-    <ul class="server-data">
-      <li>🔹 <strong>Tipo de servidor:</strong> Clásico</li>
-      <li>🔹 <strong>Antigüedad:</strong> +8 años (con periodos de inactividad)</li>
-      <li>🔹 <strong>Estado:</strong> Bajo / variable</li>
-      <li>🔹 <strong>Media de jugadores:</strong> 50 – 150 diarios (estimado)</li>
-      <li>🔹 <strong>Versiones:</strong> 1.8 – 1.16+</li>
-      <li>🔹 <strong>Owner:</strong> No público</li>
-    </ul>
-
-    <div class="server-ip">
-      IP: mc.minemora.net
-    </div>
-
-  </div>
-
- <!-- Banner para PC (728x90) - Solo visible en pantallas grandes -->
-<div class="banner-pc">
-  <div style="position: relative; max-width: 728px; margin: 0 auto;">
-    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width: 100%; display: block;"></iframe>
-    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
-  </div>
-</div>
-
-<!-- Banner para Móviles (468x60) - Solo visible en pantallas pequeñas -->
-<div class="banner-mobile">
-  <div style="position: relative; max-width: 468px; margin: 0 auto;">
-    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width: 100%; display: block;"></iframe>
-    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
-  </div>
-</div>
-
-<!-- STRUCTURED DATA para Google -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "TOP 6 Servidores Minecraft No Premium 2025",
-  "description": "Los mejores servidores de Minecraft no premium en español",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "item": {
-        "@type": "GameServer",
-        "name": "UniversoCraft",
-        "url": "mc.universocraft.com"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@type": "GameServer",
-        "name": "Librecraft",
-        "url": "mc.librecraft.com"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@type": "GameServer",
-        "name": "Purple Prison",
-        "url": "purpleprison.org"
-      }
+  <script>
+    function copyIP(btn, ip) {
+      navigator.clipboard.writeText(ip).then(() => {
+        btn.textContent = "✅ Copiado";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.textContent = "📋 Copiar";
+          btn.classList.remove("copied");
+        }, 2000);
+      }).catch(() => {
+        // Fallback para navegadores sin Clipboard API
+        const el = document.createElement("textarea");
+        el.value = ip;
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand("copy");
+        document.body.removeChild(el);
+        btn.textContent = "✅ Copiado";
+        btn.classList.add("copied");
+        setTimeout(() => {
+          btn.textContent = "📋 Copiar";
+          btn.classList.remove("copied");
+        }, 2000);
+      });
     }
-  ]
-}
-</script>
+  </script>
+
 </body>
 </html>

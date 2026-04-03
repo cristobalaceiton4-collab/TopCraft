@@ -3,102 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TopCraft | Packs PvP</title>
 
-  <!-- FUENTE -->
+  <!-- SEO -->
+  <title>TOP 6 Packs PvP Minecraft 2025 | TopCraft</title>
+  <meta name="description" content="Los mejores packs de texturas PvP para Minecraft 2025: Crimson Edge, FrostByte, Huahwi y más. Descarga gratuita, optimizados para FPS y PvP competitivo.">
+  <meta name="keywords" content="packs pvp minecraft, texture packs pvp, crimson edge pvp, frostbyte pvp, huahwi pack, rky blue fade, voidcore pvp, zenith lite, packs minecraft 1.8, packs minecraft 1.21, descargar packs pvp gratis">
+  <meta name="author" content="TopCraft">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://tudominio.com/pack-txt-top.html">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="imagenes/logo TopCraft .png">
+  <link rel="apple-touch-icon" href="imagenes/logo TopCraft .png">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="TOP 6 Packs PvP Minecraft 2025 | TopCraft">
+  <meta property="og:description" content="Los mejores texture packs PvP para Minecraft con descarga gratuita. Optimizados para FPS y competición.">
+  <meta property="og:image" content="imagenes/logo TopCraft .png">
+  <meta property="og:url" content="https://tudominio.com/pack-txt-top.html">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TOP 6 Packs PvP Minecraft 2025">
+  <meta name="twitter:description" content="Los mejores packs de texturas PvP con descarga gratuita.">
+  <meta name="twitter:image" content="imagenes/logo TopCraft .png">
+
+  <meta name="theme-color" content="#dbb639">
+
+  <!-- FUENTES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      background-color: #dbb639;
-      padding-top: 90px;
+    :root {
+      --gold: #dbb639;
+      --gold-light: #f5d050;
+      --gold-dark: #b8921e;
+      --black: #0a0a0a;
+      --card-bg: #f5e9b8;
+      --card-inner: rgba(0,0,0,0.08);
+      --text-dark: #1a1208;
+      --pixel-font: "Pixelify Sans", sans-serif;
+      --shadow-card: 0 8px 32px rgba(0,0,0,0.3);
+      --radius: 16px;
     }
 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--gold);
+      background-image:
+        radial-gradient(circle at 15% 40%, rgba(255,255,255,0.07) 0%, transparent 50%),
+        radial-gradient(circle at 85% 60%, rgba(0,0,0,0.07) 0%, transparent 40%);
+      min-height: 100vh;
+      padding-top: 80px;
+      font-family: var(--pixel-font);
+    }
+
+    /* ============================
+       NAVBAR
+    ============================ */
     .navbar {
-      background-color: #dbb639;
+      background: var(--gold);
+      border-bottom: 4px solid var(--black);
+      box-shadow: 0 4px 0 var(--gold-dark);
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 40px;
+      gap: 8px;
       position: fixed;
-      top: 0;
+      top: 0; left: 0;
       width: 100%;
-      padding: 15px 0;
+      padding: 12px 20px;
       z-index: 1000;
     }
 
     .navbotons {
-      color: #000;
+      color: var(--black);
       text-decoration: none;
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 30px;
-      padding: 10px 0;
+      font-family: var(--pixel-font);
+      font-size: 22px;
+      font-weight: 700;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s, transform 0.1s;
     }
 
-    .menu {
-      position: relative;
-      display: flex;
-      align-items: center;
+    .navbotons:hover {
+      background: var(--black);
+      color: var(--gold-light);
+      transform: translateY(-2px);
     }
+
+    .menu { position: relative; display: flex; align-items: center; }
+    .menu > .navbotons::after { content: " ▾"; font-size: 14px; }
 
     .dropdown {
       display: none;
       position: absolute;
-      top: 100%;
+      top: calc(100% + 8px);
       left: 50%;
       transform: translateX(-50%);
-      background-color: black;
-      padding: 15px;
+      background: var(--black);
+      border: 3px solid var(--gold-dark);
+      border-radius: 12px;
+      padding: 12px;
       flex-direction: column;
-      gap: 12px;
-      min-width: 300px;
+      gap: 6px;
+      min-width: 280px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+      z-index: 100;
     }
 
     .dropdown a {
-      color: #D4AF37;
-      font-size: 20px;
+      color: var(--gold-light);
+      font-size: 16px;
       text-decoration: none;
-      font-family: "Pixelify Sans", sans-serif;
+      font-family: var(--pixel-font);
+      white-space: nowrap;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .dropdown a:hover { background: var(--gold-dark); color: var(--black); }
+    .menu:hover .dropdown { display: flex; }
+
+    /* ============================
+       TÍTULO DE PÁGINA
+    ============================ */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+
+    .page-header h1 {
+      font-size: clamp(26px, 5vw, 48px);
+      color: var(--black);
+      text-shadow: 3px 3px 0 var(--gold-dark), 5px 5px 0 rgba(0,0,0,0.15);
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: var(--text-dark);
+      opacity: 0.75;
+    }
+
+    /* ============================
+       PACK CARD
+    ============================ */
+    .server-card {
+      max-width: 940px;
+      margin: 48px auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 40px 36px;
+      box-shadow: var(--shadow-card);
+      text-align: center;
+      border: 3px solid transparent;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+    }
+
+    .server-card:hover {
+      border-color: var(--gold-dark);
+      transform: translateY(-4px);
+    }
+
+    .rank-badge {
+      position: absolute;
+      top: -18px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--black);
+      color: var(--gold-light);
+      font-family: var(--pixel-font);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 6px 20px;
+      border-radius: 30px;
+      border: 3px solid var(--gold-dark);
       white-space: nowrap;
     }
 
-    .menu:hover .dropdown {
-      display: flex;
-    }
-
-    /* TITULO */
-    .inicio h1 {
-      text-align: center;
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 45px;
-      margin: 40px 0;
-    }
-
-    /* CARD */
-    .server-card {
-      max-width: 1000px;
-      margin: 80px auto;
-      background-color: #f2e3a3;
-      border-radius: 18px;
-      padding: 40px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      text-align: center;
-    }
-
-    /* SLIDER 16:9 */
+    /* ============================
+       SLIDER DE IMÁGENES
+    ============================ */
     .slider {
       position: relative;
       width: 100%;
-      max-width: 800px;
+      max-width: 780px;
       aspect-ratio: 16 / 9;
-      margin: 0 auto 30px;
+      margin: 16px auto 28px;
       overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-      background-color: #000;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      background: #111;
     }
 
     .slider img {
@@ -106,448 +211,506 @@
       height: 100%;
       object-fit: cover;
       display: none;
+      transition: opacity 0.3s ease;
     }
 
-    .slider img.active {
-      display: block;
-    }
+    .slider img.active { display: block; }
 
     .arrow {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      font-size: 45px;
-      background: rgba(0,0,0,0.65);
-      color: #D4AF37;
-      padding: 6px 14px;
+      font-size: 40px;
+      background: rgba(0,0,0,0.7);
+      color: var(--gold-light);
+      padding: 4px 14px;
       cursor: pointer;
       user-select: none;
       border-radius: 10px;
+      z-index: 5;
+      transition: background 0.15s, transform 0.1s;
+      border: none;
+      font-family: monospace;
     }
 
-    .arrow.left { left: 15px; }
-    .arrow.right { right: 15px; }
+    .arrow:hover { background: rgba(0,0,0,0.9); transform: translateY(-50%) scale(1.05); }
+    .arrow.left { left: 12px; }
+    .arrow.right { right: 12px; }
 
-    h1 {
-      font-family: "Pixelify Sans", sans-serif;
-      font-size: 34px;
+    /* Indicadores del slider */
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .dot.active { background: var(--gold-dark); }
+
+    /* ============================
+       CONTENIDO DEL PACK
+    ============================ */
+    .pack-title {
+      font-family: var(--pixel-font);
+      font-size: clamp(22px, 3vw, 32px);
+      margin-bottom: 18px;
+      color: var(--text-dark);
     }
 
     .server-desc {
       font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      line-height: 1.7;
-      margin-bottom: 25px;
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 24px;
+      color: #2a1f05;
+      text-align: left;
     }
 
     .server-data {
-      background-color: rgba(0, 0, 0, 0.12);
-      padding: 20px;
+      background: var(--card-inner);
+      padding: 20px 24px;
       border-radius: 12px;
       text-align: left;
-      font-family: Arial;
-      font-size: 17px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
       list-style: none;
+      margin-bottom: 28px;
     }
 
     .server-data li {
       margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
     }
 
-    /* BOTONES DESCARGA */
+    /* ============================
+       BOTONES DE DESCARGA
+    ============================ */
     .downloads {
-      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 14px;
       justify-content: center;
-      margin-bottom: 50px;
     }
 
     .download-btn {
-      background-color: #000;
-      color: #D4AF37;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--black);
+      color: var(--gold-light);
       text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 18px;
-      padding: 12px 22px;
+      font-family: var(--pixel-font);
+      font-size: 17px;
+      font-weight: 600;
+      padding: 13px 24px;
       border-radius: 12px;
-      transition: transform 0.2s, background 0.2s;
+      border: 2px solid var(--gold-dark);
+      box-shadow: 0 4px 0 var(--gold-dark), 0 6px 16px rgba(0,0,0,0.25);
+      transition: transform 0.1s, box-shadow 0.1s, background 0.15s;
+      letter-spacing: 0.5px;
     }
 
     .download-btn:hover {
-      transform: scale(1.05);
-      background-color: #222;
+      transform: translateY(-3px);
+      box-shadow: 0 7px 0 var(--gold-dark), 0 10px 24px rgba(0,0,0,0.3);
+      background: #1a1a1a;
     }
 
-    .banner-fijo {
-      position: fixed;
-      top: 500px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 999;
-      background-color: transparent;
+    .download-btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 var(--gold-dark);
     }
 
-    /* Banner PC */
-    .banner-pc {
+    /* ============================
+       BANNERS
+    ============================ */
+    .banner-wrap {
       width: 100%;
-      padding: 20px 0;
+      padding: 20px 0 50px;
       text-align: center;
       overflow: hidden;
-      display: block;
     }
 
-    .banner-pc iframe {
-      max-width: 100%;
-      height: auto;
-    }
+    .banner-pc { display: block; }
+    .banner-mobile { display: none; }
 
-    /* Banner Móvil */
-    .banner-mobile {
-      width: 100%;
-      padding: 15px 0;
-      text-align: center;
-      overflow: hidden;
-      display: none;
-    }
-
-    .banner-mobile iframe {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* RESPONSIVE MÓVIL */
-    @media (max-width: 900px) {
-      .banner-fijo {
-        display: none;
-      }
-      
-      body {
-        padding-top: 70px;
-      }
-      
-      .navbar {
-        gap: 15px;
-        padding: 10px 5px;
-        flex-wrap: wrap;
-      }
-      
-      .navbotons {
-        font-size: 18px;
-      }
-      
-      .dropdown {
-        min-width: 200px;
-      }
-      
-      .dropdown a {
-        font-size: 14px;
-      }
-      
-      .inicio h1 {
-        font-size: 32px;
-        margin: 20px 10px;
-      }
-      
-      .server-card {
-        margin: 40px 15px;
-        padding: 25px 15px;
-      }
-      
-      .slider {
-        max-width: 100%;
-      }
-      
-      .arrow {
-        font-size: 30px;
-        padding: 4px 10px;
-      }
-      
-      .arrow.left { left: 5px; }
-      .arrow.right { right: 5px; }
-      
-      h1 {
-        font-size: 26px;
-      }
-      
-      .server-desc {
-        font-size: 16px;
-      }
-      
-      .server-data {
-        font-size: 15px;
-        padding: 15px;
-      }
-      
-      .download-btn {
-        font-size: 16px;
-        padding: 10px 18px;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .navbotons {
-        font-size: 14px;
-      }
-      
-      .inicio h1 {
-        font-size: 24px;
-      }
-      
-      h1 {
-        font-size: 22px;
-      }
-      
-      .server-desc {
-        font-size: 14px;
-      }
-      
-      .arrow {
-        font-size: 24px;
-      }
-    }
-
-    /* En móviles: ocultar banner PC y mostrar banner móvil */
     @media (max-width: 768px) {
-      .banner-pc {
-        display: none !important;
-      }
-      
-      .banner-mobile {
-        display: block !important;
-      }
+      .banner-pc { display: none !important; }
+      .banner-mobile { display: block !important; }
+    }
+
+    /* ============================
+       FOOTER
+    ============================ */
+    footer {
+      background: var(--black);
+      color: var(--gold-light);
+      text-align: center;
+      padding: 24px 20px;
+      font-size: 14px;
+      font-family: var(--pixel-font);
+      border-top: 4px solid var(--gold-dark);
+    }
+
+    footer a { color: var(--gold-light); text-decoration: none; }
+
+    /* ============================
+       RESPONSIVE
+    ============================ */
+    @media (max-width: 768px) {
+      body { padding-top: 70px; }
+
+      .navbar { gap: 4px; padding: 10px 8px; flex-wrap: wrap; }
+      .navbotons { font-size: 15px; padding: 6px 10px; }
+      .dropdown { min-width: 220px; }
+      .dropdown a { font-size: 14px; }
+
+      .server-card { margin: 48px 14px; padding: 30px 18px; }
+
+      .slider { max-width: 100%; }
+      .arrow { font-size: 28px; padding: 3px 10px; }
+      .arrow.left { left: 6px; }
+      .arrow.right { right: 6px; }
+
+      .server-data { font-size: 14px; padding: 16px; }
+
+      .download-btn { font-size: 15px; padding: 11px 18px; }
+    }
+
+    @media (max-width: 400px) {
+      .navbotons { font-size: 13px; padding: 5px 8px; }
+      .server-card { margin: 48px 8px; padding: 24px 12px; }
+      .pack-title { font-size: 20px; }
     }
   </style>
 </head>
-
 <body>
 
-<nav class="navbar"> 
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <a class="navbotons" href="index.html">INICIO</a>
-
     <div class="menu">
-      <a class="navbotons" href="#">TOPS</a>
-      <div class="dropdown">
-        <a href="top-servidores.html">TOP SERVIDORES NO PREMIUN</a>
-        <a href="pack-txt-top.html">TOP PACKS PVP</a>
-        <a href="top-mods.html">TOP MODS CON AMIGOS</a>
+      <a class="navbotons" href="#" aria-haspopup="true">TOPS</a>
+      <div class="dropdown" role="menu">
+        <a href="top-servidores.html" role="menuitem">🖥️ TOP SERVIDORES NO PREMIUM</a>
+        <a href="pack-txt-top.html" role="menuitem">🎨 TOP PACKS PVP</a>
+        <a href="top-mods.html" role="menuitem">🧩 TOP MODS CON AMIGOS</a>
       </div>
     </div>
-
     <a class="navbotons" href="#">REDES SOCIALES</a>
     <a class="navbotons" href="#">CONTACTO</a>
   </nav>
 
-<div class="inicio">
-  <h1>TOP 6 PACKS PvP</h1>
-</div>
+  <main>
+    <!-- ENCABEZADO -->
+    <header class="page-header">
+      <h1>🎨 TOP 6 PACKS PvP</h1>
+      <p>Packs de texturas optimizados para PvP competitivo · Descarga gratuita 2025</p>
+    </header>
 
-<div class="server-card">
+    <!-- PACK 1: Crimson Edge -->
+    <article class="server-card">
+      <div class="rank-badge">🥇 #1 MEJOR PACK PVP</div>
 
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="foto 1.png" class="active">
-    <img src="foto 2.png">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
+      <div class="slider" id="slider-1">
+        <button class="arrow left" onclick="prev('slider-1')" aria-label="Anterior">‹</button>
+        <img src="foto 1.png" class="active" alt="Crimson Edge PvP screenshot 1" loading="lazy">
+        <img src="foto 2.png" alt="Crimson Edge PvP screenshot 2" loading="lazy">
+        <button class="arrow right" onclick="next('slider-1')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-1">
+        <span class="dot active" onclick="goTo('slider-1',0)"></span>
+        <span class="dot" onclick="goTo('slider-1',1)"></span>
+      </div>
 
-  <h1>🥇 Crimson Edge PvP</h1>
+      <h2 class="pack-title">🥇 Crimson Edge PvP</h2>
+      <div class="server-desc">
+        Crimson Edge PvP es un pack diseñado para combates rápidos e intensos. Utiliza una paleta de colores rojos y grises que resaltan claramente a los jugadores y efectos, permitiendo reaccionar más rápido en situaciones de alto estrés.
+        <br><br>
+        Todo el pack está optimizado para mantener FPS altos incluso en peleas masivas, sin sacrificar la claridad visual.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 16x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> PvP competitivo / agresivo</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> Practice, BedWars, SkyWars</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="https://www.curseforge.com/minecraft/texture-packs/crimson-edge/download/6648797" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.21.5
+        </a>
+      </div>
+    </article>
 
-  <div class="server-desc">
-    Crimson Edge PvP es un pack diseñado para combates rápidos e intensos.
-     Utiliza una paleta de colores rojos y grises que resaltan claramente a los jugadores y
-      efectos, permitiendo reaccionar más rápido en situaciones de alto estrés.
-     Todo el pack está optimizado para mantener FPS altos incluso en peleas masivas.
-  </div>
+    <!-- PACK 2: FrostByte -->
+    <article class="server-card">
+      <div class="rank-badge">🥈 #2 PACK PVP</div>
 
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong>16x</li>
-    <li>🔹 <strong>Estilo:</strong> PvP competitivo / agresivo</li>
-    <li>🔹 <strong>Modalidades:</strong> Practice, BedWars, SkyWars</li>
-  </ul>
+      <div class="slider" id="slider-2">
+        <button class="arrow left" onclick="prev('slider-2')" aria-label="Anterior">‹</button>
+        <img src="imagen 3.jpeg" class="active" alt="FrostByte PvP screenshot 1" loading="lazy">
+        <img src="imagen 4.jpeg" alt="FrostByte PvP screenshot 2" loading="lazy">
+        <button class="arrow right" onclick="next('slider-2')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-2">
+        <span class="dot active" onclick="goTo('slider-2',0)"></span>
+        <span class="dot" onclick="goTo('slider-2',1)"></span>
+      </div>
 
-  <div class="downloads">
-    <a class="download-btn" href="https://www.curseforge.com/minecraft/texture-packs/crimson-edge/download/6648797">1.21.5</a>
-  </div>
+      <h2 class="pack-title">🥈 FrostByte PvP</h2>
+      <div class="server-desc">
+        FrostByte PvP apuesta por un estilo frío y limpio, con tonos azules y blancos que reducen la fatiga visual durante sesiones largas. Sus espadas cortas y partículas suaves hacen que el seguimiento de enemigos sea más sencillo.
+        <br><br>
+        Ideal para jugadores constantes y técnicos que necesitan concentración durante horas.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 16x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> Minimalista / claro</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> NoDebuff, UHC, BedWars</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="https://www.curseforge.com/minecraft-bedrock/texture-packs/frostbitepvp/download/7280447" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.21.112 (Bedrock)
+        </a>
+      </div>
+    </article>
 
-</div>
+    <!-- PACK 3: Huahwi -->
+    <article class="server-card">
+      <div class="rank-badge">🥉 #3 PACK PVP</div>
 
-<div class="server-card">
+      <div class="slider" id="slider-3">
+        <button class="arrow left" onclick="prev('slider-3')" aria-label="Anterior">‹</button>
+        <img src="imagen 7.webp" class="active" alt="Huahwi PvP Pack screenshot 1" loading="lazy">
+        <img src="imagen 8.jpg" alt="Huahwi PvP Pack screenshot 2" loading="lazy">
+        <button class="arrow right" onclick="next('slider-3')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-3">
+        <span class="dot active" onclick="goTo('slider-3',0)"></span>
+        <span class="dot" onclick="goTo('slider-3',1)"></span>
+      </div>
 
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="imagen 3.jpeg" class="active">
-    <img src="imagen 4.jpeg">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
+      <h2 class="pack-title">🥉 Huahwi PvP Pack</h2>
+      <div class="server-desc">
+        Huahwi PvP Pack es uno de los packs más populares dentro del PvP competitivo. Destaca por su HUD personalizado, espadas optimizadas y detalles visuales bien equilibrados.
+        <br><br>
+        Está pensado para jugadores tryhard que buscan rendimiento sin perder estilo. Un clásico que sigue vigente.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 16x / 64x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> Oscuro / competitivo</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> Practice, Duels, NoDebuff</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="http://www.mediafire.com/file/pqv4wkvvoqbfbqd/A+Huahwi+Pack+64x.zip" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.11.x – 1.12.x
+        </a>
+      </div>
+    </article>
 
-  <h1>🥈 FrostByte PvP</h1>
+    <!-- PACK 4: RKY Blue Fade -->
+    <article class="server-card">
+      <div class="rank-badge">4️⃣ #4 PACK PVP</div>
 
-  <div class="server-desc">
-    FrostByte PvP apuesta por un estilo frío y limpio, con tonos azules y blancos que reducen
-     la fatiga visual durante sesiones largas. Sus espadas cortas y partículas suaves hacen
-      que el seguimiento de enemigos sea más sencillo, ideal para jugadores constantes y técnicos.
-  </div>
+      <div class="slider" id="slider-4">
+        <button class="arrow left" onclick="prev('slider-4')" aria-label="Anterior">‹</button>
+        <img src="imagen 9.jpg" class="active" alt="RKY Blue Fade Texture Pack screenshot" loading="lazy">
+        <button class="arrow right" onclick="next('slider-4')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-4">
+        <span class="dot active" onclick="goTo('slider-4',0)"></span>
+      </div>
 
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong>16x</li>
-    <li>🔹 <strong>Estilo:</strong> Minimalista / claro</li>
-    <li>🔹 <strong>Modalidades:</strong> NoDebuff, UHC, BedWars</li>
-  </ul>
+      <h2 class="pack-title">4️⃣ RKY Blue Fade Texture Pack</h2>
+      <div class="server-desc">
+        Un pack clásico orientado a peleas cuerpo a cuerpo y batallas con amigos, diseñado para la versión 1.8.9 cuando el PvP era el modo dominante.
+        <br><br>
+        Aumenta los FPS considerablemente, eliminando la sensación de lag en pantalla durante los combates más intensos.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 128x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> Colorido balanceado</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> SkyWars, BedWars, PvP clásico</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="https://download704.mediafire.com/yebsrxw78cxg/kur259td4q0wrjn/%21%C2%A7f+RKY+%C2%A71+Blue+%C2%A7b+Fade+%C2%A7f%5B128x%5D.zip" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.8.9
+        </a>
+      </div>
+    </article>
 
-  <div class="downloads">
-    <a class="download-btn" href="https://www.curseforge.com/minecraft-bedrock/texture-packs/frostbitepvp/download/7280447">1.21.112</a>
-  </div>
+    <!-- PACK 5: VoidCore -->
+    <article class="server-card">
+      <div class="rank-badge">5️⃣ #5 PACK PVP</div>
 
-</div>
+      <div class="slider" id="slider-5">
+        <button class="arrow left" onclick="prev('slider-5')" aria-label="Anterior">‹</button>
+        <img src="imagen 10.jpg" class="active" alt="VoidCore PvP screenshot 1" loading="lazy">
+        <img src="imagen 11.jpg" alt="VoidCore PvP screenshot 2" loading="lazy">
+        <button class="arrow right" onclick="next('slider-5')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-5">
+        <span class="dot active" onclick="goTo('slider-5',0)"></span>
+        <span class="dot" onclick="goTo('slider-5',1)"></span>
+      </div>
 
-<div class="server-card">
+      <h2 class="pack-title">5️⃣ VoidCore PvP</h2>
+      <div class="server-desc">
+        VoidCore PvP se enfoca en un diseño limpio con tonos morados y negros, creando alto contraste en combate. Es un pack pensado para jugadores tryhard que priorizan precisión y claridad en cada golpe.
+        <br><br>
+        Especialmente recomendado para modos técnicos como Crystal PvP y UHC.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 32x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> Moderno / tryhard</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> Crystal PvP, Practice, UHC</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="https://cdn.modrinth.com/data/5U0zOk89/versions/A0TeZW4y/Void%2032x.zip" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.21 – 1.21.1
+        </a>
+        <a class="download-btn" href="https://cdn.modrinth.com/data/5U0zOk89/versions/dGCJ3xg3/Void%2032x.zip" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.21.8
+        </a>
+      </div>
+    </article>
 
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="imagen 7.webp" class="active">
-    <img src="imagen 8.jpg">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
+    <!-- PACK 6: Zenith Lite -->
+    <article class="server-card">
+      <div class="rank-badge">6️⃣ #6 PACK PVP</div>
 
-  <h1>🥉 Huahwi PvP Pack</h1>
+      <div class="slider" id="slider-6">
+        <button class="arrow left" onclick="prev('slider-6')" aria-label="Anterior">‹</button>
+        <img src="imagen 12.webp" class="active" alt="Zenith Lite PvP screenshot" loading="lazy">
+        <button class="arrow right" onclick="next('slider-6')" aria-label="Siguiente">›</button>
+      </div>
+      <div class="slider-dots" id="dots-slider-6">
+        <span class="dot active" onclick="goTo('slider-6',0)"></span>
+      </div>
 
-  <div class="server-desc">
-    Huahwi PvP Pack es uno de los packs más populares dentro del PvP competitivo.
-     Destaca por su HUD personalizado, espadas optimizadas y detalles visuales bien equilibrados.
-     Está pensado para jugadores tryhard que buscan rendimiento sin perder estilo.
-  </div>
+      <h2 class="pack-title">6️⃣ Zenith Lite PvP</h2>
+      <div class="server-desc">
+        Zenith Lite PvP es un pack liviano y optimizado para PCs de bajos recursos. Mantiene una estética simple y clara, permitiendo una experiencia PvP fluida sin caídas de rendimiento.
+        <br><br>
+        Ideal para jugadores que buscan competitividad sin sacrificar FPS, especialmente en computadoras antiguas.
+      </div>
+      <ul class="server-data">
+        <li>🔹 <span><strong>Resolución:</strong> 16x</span></li>
+        <li>🔹 <span><strong>Estilo:</strong> Ultra ligero</span></li>
+        <li>🔹 <span><strong>Modalidades:</strong> BedWars, PvP casual, Practice</span></li>
+      </ul>
+      <div class="downloads">
+        <a class="download-btn" href="https://cdn.modrinth.com/data/pbauww9b/versions/3mDQoUCV/%21%20%20%C2%A7bZen%C2%A7eith%20%C2%A7f%5B%C2%A7616x%C2%A7f%5D.zip" target="_blank" rel="noopener noreferrer">
+          ⬇️ Descargar · 1.8.9
+        </a>
+      </div>
+    </article>
 
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong> 16x / 32x</li>
-    <li>🔹 <strong>Estilo:</strong> Oscuro / competitivo</li>
-    <li>🔹 <strong>Modalidades:</strong> Practice, Duels, NoDebuff</li>
-  </ul>
+    <!-- BANNERS -->
+    <div class="banner-wrap">
+      <div class="banner-pc">
+        <div style="position:relative;max-width:728px;margin:0 auto;">
+          <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width:100%;display:block;" title="Publicidad" loading="lazy"></iframe>
+          <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" rel="noopener noreferrer" style="position:absolute;top:0;bottom:0;left:0;right:0;" aria-label="Anuncio"></a>
+        </div>
+      </div>
+      <div class="banner-mobile">
+        <div style="position:relative;max-width:468px;margin:0 auto;">
+          <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width:100%;display:block;" title="Publicidad" loading="lazy"></iframe>
+          <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" rel="noopener noreferrer" style="position:absolute;top:0;bottom:0;left:0;right:0;" aria-label="Anuncio"></a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  <div class="downloads">
-    <a class="download-btn" href="https://translate.google.com/website?sl=en&tl=es&hl=es&client=srp&u=http://www.mediafire.com/file/pqv4wkvvoqbfbqd/A%2BHuahwi%2BPack%2B64x.zip">1.12.x - 1.11.x</a>
-  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 TopCraft · Todos los derechos reservados · <a href="#">Contacto</a></p>
+  </footer>
 
-</div>
-
-<div class="server-card">
-
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="imagen 9.jpg" class="active">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
-
-  <h1>4️⃣ RKY Blue Fade Texture Pack </h1>
-
-  <div class="server-desc">
-     peleas cuerpo a cuerpo con tus compañeros, aumentando los fps para que puedas batallar
-      bien, sin sentir que la pantalla se te traba y
-      como bien lo imaginabas este paquete es para la versión 1.8.9 cuando el pvp lo era todo.
-  </div>
-
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong> 16x</li>
-    <li>🔹 <strong>Estilo:</strong> Colorido balanceado</li>
-    <li>🔹 <strong>Modalidades:</strong> SkyWars, BedWars, PvP clásico</li>
-  </ul>
-
-  <div class="downloads">
-    <a class="download-btn" href="https://download704.mediafire.com/yebsrxw78cxg/kur259td4q0wrjn/%21%C2%A7f+RKY+%C2%A71+Blue+%C2%A7b+Fade+%C2%A7f%5B128x%5D.zip">1.8.9</a>
-  </div>
-
-</div>
-
-<div class="server-card">
-
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="imagen 10.jpg" class="active">
-    <img src="imagen 11.jpg">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
-
-  <h1>5️⃣ VoidCore PvP</h1>
-
-  <div class="server-desc">
-   VoidCore PvP se enfoca en un diseño limpio con tonos morados y negros, creando
-    alto contraste en combate. Es un pack pensado para jugadores tryhard que priorizan precisión
-     y claridad en cada golpe, especialmente en modos técnicos.
-  </div>
-
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong> 16x</li>
-    <li>🔹 <strong>Estilo:</strong> Moderno / tryhard</li>
-    <li>🔹 <strong>Modalidades:</strong> Crystal PvP, Practice, UHC</li>
-  </ul>
-
-  <div class="downloads">
-    <a class="download-btn" href="https://cdn.modrinth.com/data/5U0zOk89/versions/A0TeZW4y/Void%2032x.zip">1.21 - 1.21.1</a>
-    <a class="download-btn" href="https://cdn.modrinth.com/data/5U0zOk89/versions/dGCJ3xg3/Void%2032x.zip">1.21.8</a>
-  </div>
-
-</div>
-
-<div class="server-card">
-
-  <div class="slider">
-    <span class="arrow left" onclick="prev(this)">‹</span>
-    <img src="imagen 12.webp" class="active">
-    <span class="arrow right" onclick="next(this)">›</span>
-  </div>
-
-  <h1>6️⃣ Zenith Lite PvP</h1>
-
-  <div class="server-desc">
-   Zenith Lite PvP es un pack liviano y optimizado para PCs de bajos recursos. Mantiene una estética simple
-    y clara, permitiendo una experiencia PvP fluida sin caídas de rendimiento. Ideal para jugadores
-     que buscan competitividad sin sacrificar FPS.
-  </div>
-
-  <ul class="server-data">
-    <li>🔹 <strong>Resolución:</strong> 8x / 16x</li>
-    <li>🔹 <strong>Estilo:</strong> Ultra ligero</li>
-    <li>🔹 <strong>Modalidades:</strong> BedWars, PvP casual, Practice</li>
-  </ul>
-
-  <div class="downloads">
-    <a class="download-btn" href="https://cdn.modrinth.com/data/pbauww9b/versions/3mDQoUCV/%21%20%20%C2%A7bZen%C2%A7eith%20%C2%A7f%5B%C2%A7616x%C2%A7f%5D.zip">1.8.9</a>
-  </div>
-
-</div>
-
-<!-- Banner para PC (728x90) - Solo visible en pantallas grandes -->
-<div class="banner-pc">
-  <div style="position: relative; max-width: 728px; margin: 0 auto;">
-    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-728x90/index.html" frameborder="0" height="90" width="728" style="max-width: 100%; display: block;"></iframe>
-    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
-  </div>
-</div>
-
-<!-- Banner para Móviles (468x60) - Solo visible en pantallas pequeñas -->
-<div class="banner-mobile">
-  <div style="position: relative; max-width: 468px; margin: 0 auto;">
-    <iframe src="https://publisher.linkvertise.com/cdn/ads/LV-468x60/index.html" frameborder="0" height="60" width="468" style="max-width: 100%; display: block;"></iframe>
-    <a href="https://publisher.linkvertise.com/ac/3091829" target="_blank" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></a>
-  </div>
-</div>
-
-<script>
-  function next(el) {
-    const imgs = el.parentElement.querySelectorAll("img");
-    let index = [...imgs].findIndex(img => img.classList.contains("active"));
-    imgs[index].classList.remove("active");
-    imgs[(index + 1) % imgs.length].classList.add("active");
+  <!-- SCHEMA.ORG SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "TOP 6 Packs PvP Minecraft 2025",
+    "description": "Los mejores packs de texturas PvP para Minecraft con descarga gratuita",
+    "inLanguage": "es",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"item":{"@type":"SoftwareApplication","name":"Crimson Edge PvP","applicationCategory":"GameApplication"}},
+      {"@type":"ListItem","position":2,"item":{"@type":"SoftwareApplication","name":"FrostByte PvP","applicationCategory":"GameApplication"}},
+      {"@type":"ListItem","position":3,"item":{"@type":"SoftwareApplication","name":"Huahwi PvP Pack","applicationCategory":"GameApplication"}},
+      {"@type":"ListItem","position":4,"item":{"@type":"SoftwareApplication","name":"RKY Blue Fade","applicationCategory":"GameApplication"}},
+      {"@type":"ListItem","position":5,"item":{"@type":"SoftwareApplication","name":"VoidCore PvP","applicationCategory":"GameApplication"}},
+      {"@type":"ListItem","position":6,"item":{"@type":"SoftwareApplication","name":"Zenith Lite PvP","applicationCategory":"GameApplication"}}
+    ]
   }
+  </script>
 
-  function prev(el) {
-    const imgs = el.parentElement.querySelectorAll("img");
-    let index = [...imgs].findIndex(img => img.classList.contains("active"));
-    imgs[index].classList.remove("active");
-    imgs[(index - 1 + imgs.length) % imgs.length].classList.add("active");
-  }
-</script>
+  <script>
+    // ============================
+    // SLIDER MEJORADO CON DOTS
+    // ============================
+    function getImages(sliderId) {
+      return document.querySelectorAll(`#${sliderId} img`);
+    }
+
+    function getDots(sliderId) {
+      return document.querySelectorAll(`#dots-${sliderId} .dot`);
+    }
+
+    function getActiveIndex(imgs) {
+      return [...imgs].findIndex(img => img.classList.contains("active"));
+    }
+
+    function setSlide(sliderId, index) {
+      const imgs = getImages(sliderId);
+      const dots = getDots(sliderId);
+      imgs.forEach(img => img.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+      imgs[index].classList.add("active");
+      if (dots[index]) dots[index].classList.add("active");
+    }
+
+    function next(sliderId) {
+      const imgs = getImages(sliderId);
+      const i = getActiveIndex(imgs);
+      setSlide(sliderId, (i + 1) % imgs.length);
+    }
+
+    function prev(sliderId) {
+      const imgs = getImages(sliderId);
+      const i = getActiveIndex(imgs);
+      setSlide(sliderId, (i - 1 + imgs.length) % imgs.length);
+    }
+
+    function goTo(sliderId, index) {
+      const imgs = getImages(sliderId);
+      setSlide(sliderId, Math.min(index, imgs.length - 1));
+    }
+
+    // Swipe táctil para móviles
+    document.querySelectorAll('.slider').forEach(slider => {
+      let startX = 0;
+      slider.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
+      slider.addEventListener('touchend', e => {
+        const diff = startX - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) next(slider.id);
+          else prev(slider.id);
+        }
+      }, { passive: true });
+    });
+  </script>
 
 </body>
 </html>
